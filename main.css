@@ -1,0 +1,53 @@
+body {
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+header > nav {
+  display: flex;
+  gap: 24px;
+  padding: 10px 20px;
+  background-color: #113448;
+  color: #fff;
+}
+header > nav > a.logo > img {
+  height: 26px;
+}
+header > nav > div.navr {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 16px;
+}
+header > nav > div.navr a {
+  text-decoration: none;
+  color: #fff;
+}
+header > nav > div.navr a:hover {
+  color: #14bf98;
+}
+header > nav > div.social-icons > a.icon {
+  background-image: url(Image/hexagon-green.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 26px;
+  height: 26px;
+  display: inline-block;
+  position: relative;
+}
+header > nav > div.social-icons > a.icon > i{
+  color: white;
+  position: absolute;
+  left: 50%;
+  top:50%;
+  translate: -50% -50%;
+  font-size: 16px;
+}
+
+header > nav > div.social-icons > a:hover{
+  background-image: url(Image/hexagon-white.svg);
+}
+header > nav > div.social-icons > a:hover i{
+  color: #14bf98;
+}
