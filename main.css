@@ -51,3 +51,46 @@ header > nav > div.social-icons > a:hover{
 header > nav > div.social-icons > a:hover i{
   color: #14bf98;
 }
+body > div.business {
+  background-image: url(Image/about.jpg);
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  height: calc(100vh - 50px);
+}
+body > div.business {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+body > div.business > h3 {
+  font-size: 50px;
+  margin: 0%;
+  font-weight: 700;
+}
+body > div.business > p {
+  font-size: 18px;
+}
+body > div.business > div.discover{
+  margin-top: 20px;
+}
+
+body > div.business > div.discover > a {
+  text-decoration: none;
+  color: #fff;
+  background-color: #14bf98;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  border: #14bf98 3px solid;
+}
+body > div.business > div.discover > a:hover {
+  background-color: transparent;
+  color: #14bf98;
+  border: #14bf98 3px solid;
+  transition: all 0.3s ease-in-out;
+}
