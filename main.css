@@ -124,3 +124,26 @@ body > div.intro > div.intro-img > img{
 body > div.intro > div.intro-img > img:hover{
   transform: scale(1.15);
 }
+body > div.analysis{
+  display: flex;
+  padding: 128px;
+  text-align: justify;
+  gap: 64px;
+  
+  p {
+    color: #787976;
+  }
+}
+body > div.analysis > div.card > span{
+  background-image: url(Image/hexagon-green.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 35px;
+  display: inline-block;
+}
+body > div.analysis > div.card > span > i{
+  color: #fff;
+  font-size: 30px;
+}
+
+
