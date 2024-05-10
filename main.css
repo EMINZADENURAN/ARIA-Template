@@ -36,19 +36,19 @@ header > nav > div.social-icons > a.icon {
   display: inline-block;
   position: relative;
 }
-header > nav > div.social-icons > a.icon > i{
+header > nav > div.social-icons > a.icon > i {
   color: white;
   position: absolute;
   left: 50%;
-  top:50%;
+  top: 50%;
   translate: -50% -50%;
   font-size: 16px;
 }
 
-header > nav > div.social-icons > a:hover{
+header > nav > div.social-icons > a:hover {
   background-image: url(Image/hexagon-white.svg);
 }
-header > nav > div.social-icons > a:hover i{
+header > nav > div.social-icons > a:hover i {
   color: #14bf98;
 }
 body > div.business {
@@ -74,7 +74,7 @@ body > div.business > h3 {
 body > div.business > p {
   font-size: 18px;
 }
-body > div.business > div.discover{
+body > div.business > div.discover {
   margin-top: 20px;
 }
 
@@ -93,4 +93,34 @@ body > div.business > div.discover > a:hover {
   color: #14bf98;
   border: #14bf98 3px solid;
   transition: all 0.3s ease-in-out;
+}
+body > div.intro {
+  display: flex;
+  align-items: center;
+  padding: 128px;
+  gap: 64px;
+}
+body > div.intro > div.intro-title {
+  align-items: center;
+  flex: 1;
+}
+
+body > div.intro > div.intro-title > p.green {
+  color: #14bf98;
+}
+body > div.intro > div.intro-title > p.main-title {
+  color: #787976;
+  font-style: italic;
+  text-align: justify;
+}
+body > div.intro > div.intro-img{
+  flex: 1;
+  overflow: hidden;
+}
+body > div.intro > div.intro-img > img{
+  width: 100%;
+  transition: all 0.5s ;
+}
+body > div.intro > div.intro-img > img:hover{
+  transform: scale(1.15);
 }
