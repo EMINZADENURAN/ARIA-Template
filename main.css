@@ -174,37 +174,95 @@ div.services > div.services-card > div.cards {
   img {
     width: 100%;
   }
-  li{
+  li {
     list-style: square;
     list-style-position: inside;
     color: #787976;
   }
-  span.prices{
+  span.prices {
     color: #14bf98;
   }
-  h3.h3grey{
+  h3.h3grey {
     color: #787976;
   }
-  a{
+  a {
     text-decoration: none;
     background-color: #14bf98;
     color: #fff;
     padding: 9px 30px;
     border-radius: 5px;
   }
-  a:hover{
+  a:hover {
     background-color: #fff;
     color: #14bf98;
     border: #14bf98 solid 1px;
   }
-  p.texts{
+  p.texts {
     padding: 0px 64px;
     color: #787976;
   }
 }
-.container {
-  width: 100%;
-  margin: auto;
+div.customer > div.customer-title {
+  text-align: center;
+
+  p {
+    color: #787976;
+  }
+}
+div.customer > div.customer-cards {
+  padding: 128px 70px;
+  display: flex;
+  gap: 64px;
+  text-align: center;
+  img {
+    border-radius: 50%;
+    width: 30%;
+  }
+}
+div.callme {
+  display: flex;
+  background-color: #113448;
+  padding: 112px 90px;
+}
+div.callme > div.callme-title {
+  color: #fff;
+  text-align: justify;
+  h3 {
+    color: #14bf98;
+  }
+}
+div.callme > div.callme-input {
+  a {
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    background-color: #14bf98;
+
+  }
+
+  input {
+    width: 100%;
+    background-color: #2a5d77;
+    border: 1px solid #39728f;
+    color: #fff;
+  }
+  label {
+    color: #fff;
+  }
+  div.checkbox {
+    display: flex;
+    input {
+      margin-right: 10px;
+      width: 5%;
+    }
+  }
+}
+div.projects-img{
+  display: flex;
+  flex: 4 2;
+  img{
+    width: 20%;
+  }
 }
 @media (min-width: 576px) {
   .container {
