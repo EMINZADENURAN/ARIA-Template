@@ -113,37 +113,111 @@ body > div.intro > div.intro-title > p.main-title {
   font-style: italic;
   text-align: justify;
 }
-body > div.intro > div.intro-img{
+body > div.intro > div.intro-img {
   flex: 1;
   overflow: hidden;
 }
-body > div.intro > div.intro-img > img{
+body > div.intro > div.intro-img > img {
   width: 100%;
-  transition: all 0.5s ;
+  transition: all 0.5s;
 }
-body > div.intro > div.intro-img > img:hover{
+body > div.intro > div.intro-img > img:hover {
   transform: scale(1.15);
 }
-body > div.analysis{
+body > div.analysis {
   display: flex;
-  padding: 128px;
+  padding: 16px 0px 128px;
   text-align: justify;
   gap: 64px;
-  
+
   p {
     color: #787976;
   }
 }
-body > div.analysis > div.card > span{
+body > div.analysis > div.card > span {
   background-image: url(Image/hexagon-green.svg);
   background-position: center;
   background-repeat: no-repeat;
   padding: 35px;
   display: inline-block;
 }
-body > div.analysis > div.card > span > i{
+body > div.analysis > div.card > span > i {
   color: #fff;
   font-size: 30px;
 }
+div.services-title {
+  text-align: center;
 
+  h2 {
+    font-size: 30px;
+    color: #787976;
+  }
 
+  p.servicep {
+    color: #14bf98;
+  }
+}
+div.services > div.services-card {
+  display: flex;
+  gap: 40px;
+  text-align: center;
+  padding: 0px 150px;
+  padding-bottom: 64px;
+}
+div.services > div.services-card > div.cards {
+  border: solid 1px #ebe8e8;
+  border-radius: 5px;
+  background-color: #fff;
+  p.texts {
+    text-align: justify;
+  }
+  img {
+    width: 100%;
+  }
+  li{
+    list-style: square;
+    list-style-position: inside;
+    color: #787976;
+  }
+  span.prices{
+    color: #14bf98;
+  }
+  h3.h3grey{
+    color: #787976;
+  }
+  a{
+    text-decoration: none;
+    background-color: #14bf98;
+    color: #fff;
+    padding: 9px 30px;
+    border-radius: 5px;
+  }
+  a:hover{
+    background-color: #fff;
+    color: #14bf98;
+    border: #14bf98 solid 1px;
+  }
+  p.texts{
+    padding: 0px 64px;
+    color: #787976;
+  }
+}
+.container {
+  width: 100%;
+  margin: auto;
+}
+@media (min-width: 576px) {
+  .container {
+    width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 960px;
+  }
+}
