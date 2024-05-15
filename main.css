@@ -157,7 +157,7 @@ div.services-title {
     color: #14bf98;
   }
 }
-div.services > div.services-card {
+div.services > div.services-card  {
   display: flex;
   gap: 40px;
   text-align: center;
@@ -168,6 +168,7 @@ div.services > div.services-card > div.cards {
   border: solid 1px #ebe8e8;
   border-radius: 5px;
   background-color: #fff;
+  position: relative;
   p.texts {
     text-align: justify;
   }
@@ -179,6 +180,9 @@ div.services > div.services-card > div.cards {
     list-style-position: inside;
     color: #787976;
   }
+  li::marker{
+    color: #14bf98;
+  }
   span.prices {
     color: #14bf98;
   }
@@ -186,11 +190,14 @@ div.services > div.services-card > div.cards {
     color: #787976;
   }
   a {
+    position: absolute;
     text-decoration: none;
     background-color: #14bf98;
     color: #fff;
     padding: 9px 30px;
     border-radius: 5px;
+    left: 50%;
+    translate: -50%;
   }
   a:hover {
     background-color: #fff;
@@ -205,13 +212,15 @@ div.services > div.services-card > div.cards {
 div.customer > div.customer-title {
   text-align: center;
 
-  p {
+  p{
     color: #787976;
+    
   }
 }
 div.customer > div.customer-cards {
   padding: 128px 70px;
   display: flex;
+  flex: 1 1 1;
   gap: 64px;
   text-align: center;
   img {
@@ -230,6 +239,9 @@ div.callme > div.callme-title {
   h3 {
     color: #14bf98;
   }
+  p.px{
+    padding-right: 64px;
+  }
 }
 div.callme > div.callme-input {
   a {
@@ -245,6 +257,7 @@ div.callme > div.callme-input {
     background-color: #2a5d77;
     border: 1px solid #39728f;
     color: #fff;
+    padding: 10px 35px;
   }
   label {
     color: #fff;
@@ -253,17 +266,133 @@ div.callme > div.callme-input {
     display: flex;
     input {
       margin-right: 10px;
-      width: 5%;
+      width: 10%;
     }
   }
 }
 div.projects-img{
-  display: flex;
-  flex: 4 2;
-  img{
-    width: 20%;
+  display: grid;
+  
+ img{
+    width: 100%;
+    overflow: hidden;
+    img:hover{
+      transform: scale(1.1);
+    }
   }
 }
+div.projects > div.projects-title{
+  text-align: center;
+  padding-top: 16px;
+
+  h3{
+    color: #14bf98;
+    font-weight: 600;
+  }
+  h2{
+    color: #787976;
+  }
+}
+div.projects-img{
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  padding: 64px 64px;
+  overflow: hidden;
+
+  img{
+    overflow: hidden;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+  }
+  img:hover{
+    transform: scale(1.1);
+
+  }
+}
+div.team > div.team-title {
+  text-align: center;
+  h2{
+    color: #787976;
+  }
+}
+div.team > div.team-img {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  padding-top: 32px;
+}
+div.team > div.team-img > div.person{
+  text-align: center;
+  img{
+    transition: all 0.3s ease-in-out;
+  }
+  img:hover{
+    transform: scale(1.1);
+  }
+}
+div.team > div.team-img > div.person > div.social-icons > a.icon{
+  background-image: url(Image/hexagon-green.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 26px;
+  height: 26px;
+  display: inline-block;
+  position: relative;
+}
+div.team > div.team-img > div.person > div.social-icons > a.icon > i{
+  color: white;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  translate: -50% -50%;
+  font-size: 16px;
+}
+
+div.team > div.team-img > div.person > div.social-icons > a.icon > i:hover{
+  background-image: url(Image/hexagon-white.svg);
+}
+div.team > div.team-img > div.person > div.social-icons > a.icon > i:hover{
+  color: #14bf98;
+}
+div.about{
+  display: flex;
+  padding: 128px 64px;
+}
+div.about > div.about-img > img{
+  width: 100%;
+}
+div.about > div.about-title{
+  padding: 32px;
+  h3{
+    color: #14bf98;
+  }
+  h2{
+    color: #787976;
+  }
+  li{
+    list-style: square;
+  }
+  ::marker{
+    color: #14bf98;
+  }
+}
+div.about > div.about-title > div.about-number{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  span{
+    color: #14bf98;
+    font-size: 40px;
+    font-weight: bold;
+  }
+}
+
+.container{
+  max-width: 100%;
+  margin: auto;
+  
+}
+
 @media (min-width: 576px) {
   .container {
     width: 540px;
