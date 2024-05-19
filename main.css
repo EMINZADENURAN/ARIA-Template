@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 body {
   margin: 0px;
   box-sizing: border-box;
@@ -258,6 +261,7 @@ div.callme > div.callme-input {
     color: #fff;
     text-align: center;
     background-color: #14bf98;
+    justify-content: center;
   }
 
   input {
@@ -400,6 +404,94 @@ div.about > div.about-title > div.about-number {
     font-weight: bold;
   }
 }
+div.contact > div.contact-title {
+  flex: 1;
+  h3 {
+    margin: 0%;
+    color: #14bf98;
+  }
+  h2 {
+    color: #787976;
+  }
+  p > i {
+    color: #14bf98;
+    padding: 5px;
+  }
+}
+div.contact > div.contact-title > div.contact-link {
+  a {
+    text-decoration: none;
+    color: #787976;
+  }
+  i {
+    color: #14bf98;
+  }
+}
+div.contact > div.contact-title > div.contact-social {
+  h3 {
+    color: #787976;
+    font-size: 24px;
+  }
+  a {
+    background-image: url(Image/hexagon-green.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 52px;
+    height: 52px;
+    display: inline-block;
+    position: relative;
+  }
+  a:hover {
+    background-image: url(Image/hexagon-white.svg);
+    i {
+      color: #14bf98;
+    }
+  }
+  i {
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+    font-size: 24px;
+  }
+}
+
+div.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+div.contact > div.contact-input {
+  flex: 1;
+  input {
+    width: 100%;
+    padding: 8px 16px;
+    border: 1px solid #dadada;
+  }
+  textarea {
+    width: 100%;
+    resize: vertical;
+    border: 1px solid #dadada;
+  }
+}
+footer{
+  background-color: #113448;
+  display: flex;
+  color: white;
+ 
+  div.footer{
+    display: flex;
+    padding: 64px 32px;
+    gap: 32px;
+  }
+  div > a{
+    color: white;
+    display: block;
+  }
+}
+footer > div.footer > div.footer-card{
+}
 
 .container {
   max-width: 100%;
@@ -446,10 +538,25 @@ div.about > div.about-title > div.about-number {
   div.callme {
     flex-direction: row;
   }
-div.team > div.team-img {
-  flex-direction: row;
+  div.team > div.team-img {
+    flex-direction: row;
+  }
+  div.about {
+    flex-direction: row;
+  }
+  div.contact {
+    flex-direction: row;
+  }
 }
-div.about {
-  flex-direction: row;
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1140px;
+  }
 }
+
+@media (min-width: 1400px) {
+  .container {
+    width: 1320px;
+  }
 }
